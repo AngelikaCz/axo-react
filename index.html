@@ -7,8 +7,8 @@
     <title>Axo Personal React NextJS Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -22,24 +22,371 @@
   </head>
   <body>
     <!-- NAV -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__sections">
+          <div class="navbar__me">
+            <p>@axo.<span class="navbar__me-color">me</span></p>
+          </div>
+          <div class="navbar__links">
+            <ul class="navbar__links-list">
+              <li class="navbar__link"><a href="#">Services.</a></li>
+              <li class="navbar__link"><a href="#">Work</a></li>
+              <li class="navbar__link"><a href="#">Blog</a></li>
+              <li class="navbar__link"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar__socials">
+            <a href="#"><i class="fa-solid fa-basketball"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- NAV END -->
-    <!-- DRIVER -->
-    <!-- DRIVER END -->
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero__parts">
+          <div class="hero__about">
+            <h1 class="hero__main-heading">Brandon User Interface Designer</h1>
+            <p class="hero__subtitle">
+              I'm a Freelance UI/UX Designer and Product Desiger based in
+              London, England. I strives to build immersive and beautiful web
+              applications through carefully crafted code and user-centric
+              design.
+            </p>
+            <button class="hero__button"><a href="#">Conect with me</a></button>
+            <ul class="hero__data">
+              <li>
+                <div class="hero__number">
+                  7+
+                  <p class="hero__number-caption">Years Experience</p>
+                </div>
+              </li>
+              <li>
+                <div class="hero__number">
+                  300+
+                  <p class="hero__number-caption">Complete Projects</p>
+                </div>
+              </li>
+              <li>
+                <div class="hero__number">
+                  135+
+                  <p class="hero__number-caption">Happy Clients</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__photo">
+            <img src="./assets/img/hero.png" alt="person photo" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HERO END -->
     <!-- SERVICES -->
+    <section class="services">
+      <div class="container">
+        <h4 class="services__upper-heading">My services</h4>
+        <h2 class="services__main-heading">What I do for my Customers</h2>
+        <ul class="services__list">
+          <li class="services__box">
+            <div class="services__box-content">
+              <i class="fa-regular fa-id-card"></i>
+              <h5 class="services__box-heading">UI/UX Designer</h5>
+              <p class="services__box-text">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </li>
+          <li class="services__box">
+            <div class="services__box-content">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h5 class="services__box-heading">Webflow Developer</h5>
+              <p class="services__box-text">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </li>
+          <li class="services__box">
+            <div class="services__box-content">
+              <i class="fa-solid fa-pen-nib"></i>
+              <h5 class="services__box-heading">Product Designer</h5>
+              <p class="services__box-text">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- SERVICES END -->
     <!-- ABOUT -->
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about__photo">
+            <img src="./assets/img/about.png" alt="person photo" />
+          </div>
+          <div class="about__text-box">
+            <h4 class="services__upper-heading">About me</h4>
+            <h2 class="services__main-heading">Awarded Designer</h2>
+            <p class="about__text">
+              In publishing and graphic design, Lorem ipsum is a placeholder
+              text commonly used to demonstrate the visual form of a document or
+              a typeface without . In publishing and graphic design, Lorem ipsum
+              is a placeholder .In publishing and graphic design, Lorem ipsum is
+              a placeholder .
+            </p>
+            <div class="about__buttons">
+              <button class="about__read-button">
+                <a href="#">Read more</a>
+              </button>
+              <button class="about__play-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+              </button>
+              <p class="about__play-button-caption">Watch Video</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ABOUT END -->
     <!-- PORTFOLIO -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__section">
+          <h4 class="services__upper-heading">My Portfolio</h4>
+          <h2 class="services__main-heading">
+            Showcasing some of my best work
+          </h2>
+          <ul class="portfolio__links">
+            <li class="portfolio__link"><a href="#">All</a></li>
+            <li class="portfolio__link"><a href="#">Youtube</a></li>
+            <li class="portfolio__link"><a href="#">Vimeo</a></li>
+            <li class="portfolio__link"><a href="#">Soundcloud</a></li>
+            <li class="portfolio__link"><a href="#">Images</a></li>
+            <li class="portfolio__link"><a href="#">Detail</a></li>
+          </ul>
+          <div class="portfolio__images">
+            <div class="portfolio__image-section-1">
+              <img src="./assets/img/1.png" alt="phone" />
+              <img src="./assets/img/4.png" alt="cloud" />
+            </div>
+            <div class="portfolio__image-section-2">
+              <img src="./assets/img/2.png" alt="laptop" />
+              <img src="./assets/img/5.png" alt="camera" />
+            </div>
+            <div class="portfolio__image-section-3">
+              <img src="./assets/img/3.png" alt="light-house" />
+              <img src="./assets/img/6.png" alt="house" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- PORTFOLIO END -->
     <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <!-- PLACEHOLDER FOR SLIDER with Testimonials -->
+        <div class="testimonials__box">
+          <p class="testimonials__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+            ducimus id amet dignissimos ad odio atque nisi laboriosam.
+            Temporibus debitis reiciendis ipsum aliquam sunt suscipit sapiente
+            dolorem enim quisquam iusto!
+          </p>
+          <div class="testimonials__signature_section">
+            <div class="testimonials__image">
+              <img src="./assets/img/mike.jpg" alt="person photo" />
+            </div>
+            <div class="testimonials__signature">
+              <p class="testimonials__name">Mike Anderson</p>
+              <p class="testimonials__company">Vivaco Studio</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__box">
+          <p class="testimonials__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+            ducimus id amet dignissimos ad odio atque nisi laboriosam.
+            Temporibus debitis reiciendis ipsum aliquam sunt suscipit sapiente
+            dolorem enim quisquam iusto!
+          </p>
+          <div class="testimonials__signature_section">
+            <div class="testimonials__image">
+              <img src="./assets/img/beseie.jpg" alt="person photo" />
+            </div>
+            <div class="testimonials__signature">
+              <p class="testimonials__name">Beseie Cooper</p>
+              <p class="testimonials__company">XYZ Company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- TESTIMONIALS END -->
     <!-- SLIDER -->
+    <section class="slider">
+      <div class="container">
+        <ul class="slider__logos">
+          <li>
+            <img src="./assets/img/1.png" alt="logo" class="slider__logo" />
+          </li>
+          <li>
+            <img src="./assets/img/2.png" alt="logo" class="slider__logo" />
+          </li>
+          <li>
+            <img src="./assets/img/3.png" alt="logo" class="slider__logo" />
+          </li>
+          <li>
+            <img src="./assets/img/4.png" alt="logo" class="slider__logo" />
+          </li>
+          <li>
+            <img src="./assets/img/5.png" alt="logo" class="slider__logo" />
+          </li>
+          <li>
+            <img src="./assets/img/6.png" alt="logo" class="slider__logo" />
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- SLIDER END -->
     <!-- BLOG -->
+    <section class="blog">
+      <div class="container">
+        <div class="blog__section">
+          <h4 class="services__upper-heading">My Blog</h4>
+          <h2 class="services__main-heading">
+            Our Recent Updates, Blog, Tips, Tricks & More
+          </h2>
+          <div class="blog__posts">
+            <div class="blog__box">
+              <img src="./assets/img/blog1.png" alt="person on laptop" />
+              <div class="blog__text-box">
+                <h6 class="blog__upper-heading">
+                  UI/UX/Design <span>/ 23 Oct 2022</span>
+                </h6>
+                <h5 class="blog__main-heading">
+                  User interface design or user interface engineering
+                </h5>
+                <p class="blog__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur dolores, consequatur iusto laborum.
+                </p>
+              </div>
+            </div>
+            <div class="blog__box">
+              <img src="./assets/img/blog2.png" alt="writing place" />
+              <div class="blog__text-box">
+                <h6 class="blog__upper-heading">
+                  Web Design <span>/ 13 Dec 2022</span>
+                </h6>
+                <h5 class="blog__main-heading">
+                  Web design encompasses many different skills
+                </h5>
+                <p class="blog__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur dolores, consequatur iusto laborum.
+                </p>
+              </div>
+            </div>
+            <div class="blog__box">
+              <img src="./assets/img/blog3.png" alt="desk with laptop" />
+              <div class="blog__text-box">
+                <h6 class="blog__upper-heading">
+                  Web Development <span>/ 23 Dec 2022</span>
+                </h6>
+                <h5 class="blog__main-heading">
+                  Jim Morisson Says when the musics over turn off the light
+                </h5>
+                <p class="blog__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur dolores, consequatur iusto laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- BLOG END -->
     <!-- CONTACT -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact__sections">
+          <div class="contact__section">
+            <h4 class="contact__upper-heading">Get in touch!</h4>
+            <h2 class="contact__main-heading">
+              Contact us for a quote, help to join the team
+            </h2>
+            <ul class="contact__details">
+              <li class="contact__details-title">Mail</li>
+              <li class="contact__details-text">example@gmail.com</li>
+              <li class="contact__details-title">Address</li>
+              <li class="contact__details-text">
+                1540 BrookSide Drive Birmingham, Alabama, USA
+              </li>
+              <li class="contact__details-title">Phone</li>
+              <li class="contact__details-text">0123456789</li>
+            </ul>
+          </div>
+          <div class="contact__section">
+            <form action="get" class="contact__form">
+              <label for="form-name">Name</label>
+              <input
+                type="text"
+                name="search"
+                id="form-name"
+                class="contact__input"
+              />
+              <label for="form-email">Email</label>
+              <input
+                type="text"
+                name="search"
+                id="form-email"
+                class="contact__input"
+              />
+              <!-- !!!!!!!!!!!!!!!!!!!!1 Zmienić typ boxa na rozciąganie -->
+              <label for="form-message">Message</label>
+              <input
+                type="text"
+                name="search"
+                id="form-message"
+                class="contact__input"
+              />
+              <button type="submit" class="contact__buton">
+                Send me message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- CONTACT END -->
     <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__section">
+          <div class="footer__socials">
+            <a href="#"><i class="fa-solid fa-basketball"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+          <p class="footer__copyrigths">
+            Developed with love by Angelika based on Codeefly project © 2023
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- FOOTER END -->
     <script src="/assets/js/app.js"></script>
   </body>
