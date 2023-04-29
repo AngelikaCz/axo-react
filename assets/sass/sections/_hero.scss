@@ -1,0 +1,71 @@
+.hero {
+  background-color: $heroBgColorMain;
+  height: 75vh;
+
+  &__parts {
+    display: flex;
+  }
+
+  &__about {
+    width: 60%;
+  }
+
+  &__main-heading {
+    font-size: 72px;
+    color: $heroHeadingFontColor;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: $heroSubtitlesFontColor;
+    line-height: 1.5;
+    margin: 24px 0 40px 0;
+
+  }
+
+  &__button {
+    font-size: 18px;
+    background-color: $heroBgColorButton;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+  }
+
+  &__button-text {
+    color: $heroButtonFontColor;
+  }
+
+
+  &__data {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0 0 0;
+
+  }
+
+  &__number {
+    font-size: 48px;
+    color: $heroHeadingFontColor;
+    margin-bottom: 0;
+  }
+
+  &__number-caption {
+    font-size: 20px;
+    color: $heroSubtitlesFontColor;
+    margin-top: 0;
+  }
+
+  &__photo-container {
+    width: 40%;
+    border-left: 35px solid #212025;
+    background-color: $heroBgColorPhoto;
+  }
+
+  &__photo {
+    filter: grayscale(100%);
+    max-width: 500px
+  }
+
+}

@@ -1,0 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $mainFontFamily;
+  padding: 10px 0 0 0;
+}
+
+h1,
+h2 {
+  font-family: $mainHeadingsFontFamily;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
