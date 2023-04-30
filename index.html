@@ -101,7 +101,7 @@
         <ul class="services__list">
           <li class="services__box">
             <div class="services__box-content">
-              <i class="fa-regular fa-id-card"></i>
+              <i class="fa-regular fa-id-card services__icon"></i>
               <h5 class="services__box-heading">UI/UX Designer</h5>
               <p class="services__box-text">
                 It is a long established fact that a reader will be distracted
@@ -111,7 +111,7 @@
           </li>
           <li class="services__box">
             <div class="services__box-content">
-              <i class="fa-solid fa-laptop-code"></i>
+              <i class="fa-solid fa-laptop-code services__icon"></i>
               <h5 class="services__box-heading">Webflow Developer</h5>
               <p class="services__box-text">
                 It is a long established fact that a reader will be distracted
@@ -121,7 +121,7 @@
           </li>
           <li class="services__box">
             <div class="services__box-content">
-              <i class="fa-solid fa-pen-nib"></i>
+              <i class="fa-solid fa-pen-nib services__icon"></i>
               <h5 class="services__box-heading">Product Designer</h5>
               <p class="services__box-text">
                 It is a long established fact that a reader will be distracted
@@ -136,9 +136,13 @@
     <!-- ABOUT -->
     <section class="about">
       <div class="container">
-        <div class="about-content">
-          <div class="about__photo">
-            <img src="./assets/img/about.png" alt="person photo" />
+        <div class="about__content">
+          <div class="about__photo-box">
+            <img
+              src="./assets/img/about.png"
+              alt="person photo"
+              class="about__photo"
+            />
           </div>
           <div class="about__text-box">
             <h4 class="services__upper-heading">About me</h4>
@@ -152,10 +156,12 @@
             </p>
             <div class="about__buttons">
               <button class="about__read-button">
-                <a href="#">Read more</a>
+                <a href="#" class="about__read-button-text">Read more</a>
               </button>
               <button class="about__play-button">
-                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"
+                  ><i class="fa-solid fa-play about__play-button-icon"></i
+                ></a>
               </button>
               <p class="about__play-button-caption">Watch Video</p>
             </div>

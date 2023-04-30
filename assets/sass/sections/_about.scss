@@ -1,0 +1,58 @@
+.about {
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__photo-box {
+    width: 40%;
+  }
+
+  &__photo {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__text-box {
+    width: 60%;
+  }
+
+  &__upper-heading {
+    text-align: left;
+  }
+
+  &__main-heading {
+    font-size: 48px;
+    color: $aboutHeadingsFontColor;
+    text-align: left;
+  }
+
+  &__text {
+    color: $aboutParagraphsFontColor;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__read-button {
+    font-size: 18px;
+    background-color: $aboutBgColorReadButton;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+  }
+
+  &__read-button-text {
+    color: $aboutReadButtonFontColor;
+  }
+
+  &__play-button {}
+
+  &__play-button-icon {}
+
+  &__play-button-caption {}
+}

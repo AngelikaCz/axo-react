@@ -8,8 +8,15 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: $mainHeadingsFontFamily;
+}
+
+h4 {
+  color: $upper-headingsFontColor;
+  font-size: 22px;
+  font-family: $mainFontFamily;
 }
 
 a {

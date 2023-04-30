@@ -1,0 +1,44 @@
+.services {
+  &__upper-heading {
+    text-align: center;
+  }
+
+  &__main-heading {
+    font-size: 48px;
+    text-align: center;
+    color: $servicesHeadingsFontColor;
+  }
+
+  &__list {
+    @include reset-list;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__box-content {
+    width: calc(100/3);
+    box-shadow: 10px 10px 10px $servicesBoxShadowColor;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $servicesBoxBgHoverColor;
+      color: $servicesBoxFontHoverColor;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+  }
+
+  &__box-heading {
+    font-size: 25px;
+    color: $servicesHeadingsFontColor;
+    font-weight: 300;
+  }
+
+  &__box-text {
+    font-size: 20px;
+    color: $servicesParagraphsFontColor;
+  }
+
+}
