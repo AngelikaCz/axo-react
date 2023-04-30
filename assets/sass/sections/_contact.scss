@@ -1,0 +1,75 @@
+.contact {
+
+  &__sections {
+    display: flex;
+  }
+
+  &__upper-heading {
+    text-align: left;
+  }
+
+  &__main-heading {
+    font-size: 48px;
+    color: $contactHeadingsFontColor;
+    text-align: left;
+  }
+
+  &__section {
+    width: 50%;
+  }
+
+  &__details {
+    @include reset-list;
+  }
+
+  &__details-title {
+    font-size: 22px;
+    color: $contactDetailsTitlesFontColor;
+  }
+
+  &__details-text {
+    font-size: 18px;
+    color: $contactDetailsTextFontColor;
+    margin: 0 0 20px 0;
+  }
+
+  &__section-form {
+    background-color: $contactFormBgColor;
+    border-radius: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 0 0;
+  }
+
+  &__input {
+    font-size: 18px;
+    margin: 0 0 40px 0;
+    background-color: $contactFormBgColor;
+    border: none;
+    border-bottom: 1px solid $contactFormInputBorderColor;
+    outline: none;
+    color: $contactFormInputFontColor;
+    width: 80%;
+    font-weight: 300;
+
+    &::placeholder {
+      color: $contactFormInputFontColor;
+    }
+  }
+
+  &__button {
+    font-size: 18px;
+    color: $contactFormButtonFontColor;
+    background-color: $contactFormButtonBgColor;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+  }
+
+
+}

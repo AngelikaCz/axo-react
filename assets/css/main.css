@@ -588,6 +588,91 @@ a {
   font-size: 18px;
 }
 
+.contact__sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact__upper-heading {
+  text-align: left;
+}
+.contact__main-heading {
+  font-size: 48px;
+  color: #212025;
+  text-align: left;
+}
+.contact__section {
+  width: 50%;
+}
+.contact__details {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact__details-title {
+  font-size: 22px;
+  color: #212025;
+}
+.contact__details-text {
+  font-size: 18px;
+  color: #9F9F9F;
+  margin: 0 0 20px 0;
+}
+.contact__section-form {
+  background-color: #676CDB;
+  border-radius: 20px;
+}
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px 0 0 0;
+}
+.contact__input {
+  font-size: 18px;
+  margin: 0 0 40px 0;
+  background-color: #676CDB;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  outline: none;
+  color: #FFFFFF;
+  width: 80%;
+  font-weight: 300;
+}
+.contact__input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.contact__input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.contact__input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.contact__input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.contact__input::placeholder {
+  color: #FFFFFF;
+}
+.contact__button {
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #212025;
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+}
+
 .slider .tns-nav {
   display: -webkit-box;
   display: -ms-flexbox;
