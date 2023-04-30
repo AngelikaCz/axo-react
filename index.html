@@ -7,6 +7,10 @@
     <title>Axo Personal React NextJS Portfolio</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
@@ -308,26 +312,26 @@
     <!-- SLIDER -->
     <section class="slider">
       <div class="container">
-        <ul class="slider__logos">
-          <li>
-            <img src="./assets/img/1.png" alt="logo" class="slider__logo" />
-          </li>
-          <li>
-            <img src="./assets/img/2.png" alt="logo" class="slider__logo" />
-          </li>
-          <li>
-            <img src="./assets/img/3.png" alt="logo" class="slider__logo" />
-          </li>
-          <li>
-            <img src="./assets/img/4.png" alt="logo" class="slider__logo" />
-          </li>
-          <li>
-            <img src="./assets/img/5.png" alt="logo" class="slider__logo" />
-          </li>
-          <li>
-            <img src="./assets/img/6.png" alt="logo" class="slider__logo" />
-          </li>
-        </ul>
+        <div class="slider__element">
+          <div class="slider__item">
+            <img src="./assets/img/logo1.png" alt="logo" class="slider__logo" />
+          </div>
+          <div class="slider__item">
+            <img src="./assets/img/logo2.png" alt="logo" class="slider__logo" />
+          </div>
+          <div class="slider__item">
+            <img src="./assets/img/logo3.png" alt="logo" class="slider__logo" />
+          </div>
+          <div class="slider__item">
+            <img src="./assets/img/logo4.png" alt="logo" class="slider__logo" />
+          </div>
+          <div class="slider__item">
+            <img src="./assets/img/logo5.png" alt="logo" class="slider__logo" />
+          </div>
+          <div class="slider__item">
+            <img src="./assets/img/logo6.png" alt="logo" class="slider__logo" />
+          </div>
+        </div>
       </div>
     </section>
     <!-- SLIDER END -->
@@ -335,18 +339,23 @@
     <section class="blog">
       <div class="container">
         <div class="blog__section">
-          <h4 class="services__upper-heading">My Blog</h4>
-          <h2 class="services__main-heading">
+          <h4 class="blog__upper-heading">My Blog</h4>
+          <h2 class="blog__main-heading">
             Our Recent Updates, Blog, Tips, Tricks & More
           </h2>
           <div class="blog__posts">
             <div class="blog__box">
-              <img src="./assets/img/blog1.png" alt="person on laptop" />
+              <img
+                src="./assets/img/blog1.png"
+                alt="person on laptop"
+                class="blog__image"
+              />
               <div class="blog__text-box">
-                <h6 class="blog__upper-heading">
-                  UI/UX/Design <span>/ 23 Oct 2022</span>
+                <h6 class="blog__post-upper-heading">
+                  UI/UX/Design
+                  <span class="blog__post-upper-date">/ 23 Oct 2022</span>
                 </h6>
-                <h5 class="blog__main-heading">
+                <h5 class="blog__post-main-heading">
                   User interface design or user interface engineering
                 </h5>
                 <p class="blog__description">
@@ -356,12 +365,17 @@
               </div>
             </div>
             <div class="blog__box">
-              <img src="./assets/img/blog2.png" alt="writing place" />
+              <img
+                src="./assets/img/blog2.png"
+                alt="writing place"
+                class="blog__image"
+              />
               <div class="blog__text-box">
-                <h6 class="blog__upper-heading">
-                  Web Design <span>/ 13 Dec 2022</span>
+                <h6 class="blog__post-upper-heading">
+                  Web Design
+                  <span class="blog__post-upper-date">/ 13 Dec 2022</span>
                 </h6>
-                <h5 class="blog__main-heading">
+                <h5 class="blog__post-main-heading">
                   Web design encompasses many different skills
                 </h5>
                 <p class="blog__description">
@@ -371,12 +385,17 @@
               </div>
             </div>
             <div class="blog__box">
-              <img src="./assets/img/blog3.png" alt="desk with laptop" />
+              <img
+                src="./assets/img/blog3.png"
+                alt="desk with laptop"
+                class="blog__image"
+              />
               <div class="blog__text-box">
-                <h6 class="blog__upper-heading">
-                  Web Development <span>/ 23 Dec 2022</span>
+                <h6 class="blog__post-upper-heading">
+                  Web Development
+                  <span class="blog__post-upper-date">/ 23 Dec 2022</span>
                 </h6>
-                <h5 class="blog__main-heading">
+                <h5 class="blog__post-main-heading">
                   Jim Morisson Says when the musics over turn off the light
                 </h5>
                 <p class="blog__description">

@@ -1,0 +1,30 @@
+.slider {
+  .tns-nav {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 6px;
+
+    button {
+      width: 15px;
+      height: 15px;
+      border: 0;
+      background-color: $sliderBgColor;
+      border-radius: 50%;
+      transition: 300ms;
+
+      &.tns-nav-active {
+        background-color: $sliderBgColor;
+      }
+    }
+  }
+
+  &__item {
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__logo {}
+}

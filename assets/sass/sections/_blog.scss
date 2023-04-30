@@ -1,0 +1,52 @@
+.blog {
+
+  &__section {}
+
+  &__upper-heading {
+    text-align: center;
+  }
+
+  &__main-heading {
+    font-size: 48px;
+    text-align: center;
+    color: $blogHeadingsFontColor;
+  }
+
+  &__posts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__box {
+    width: calc(100/3);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px $blogBoxShadowColor;
+  }
+
+  &__image {
+    border-radius: 20px;
+  }
+
+  &__text-box {}
+
+  &__post-upper-heading {
+    color: $blogPostsUpperHeadingsFontColor;
+    font-size: 18px;
+  }
+
+  &__post-upper-date {
+    color: $blogPostsUpperDateFontColor;
+    font-size: 18px;
+  }
+
+  &__post-main-heading {
+    color: $blogHeadingsFontColor;
+    font-size: 22px;
+  }
+
+  &__description {
+    color: $blogPostsTextFontColor;
+    font-size: 18px;
+  }
+}
