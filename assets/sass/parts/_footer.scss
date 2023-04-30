@@ -1,0 +1,24 @@
+.footer {
+  background-color: $footerBgColor;
+
+  &__section {
+    padding: 25px 0;
+  }
+
+  &__socials {
+    text-align: center;
+  }
+
+  &__social {
+    color: $footerFontColor;
+    font-size: 18px;
+    margin: 0 5px 0 0;
+  }
+
+
+  &__copyrights {
+    font-size: 18px;
+    color: $footerFontColor;
+    text-align: center;
+  }
+}

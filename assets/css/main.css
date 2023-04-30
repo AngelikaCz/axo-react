@@ -288,6 +288,7 @@ h4 {
   color: #676CDB;
   font-size: 22px;
   font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -588,6 +589,9 @@ a {
   font-size: 18px;
 }
 
+.contact {
+  margin: 0 0 120px 0;
+}
 .contact__sections {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,4 +702,23 @@ a {
 .slider__item img {
   width: 100%;
   display: block;
+}
+.footer {
+  background-color: #676CDB;
+}
+.footer__section {
+  padding: 25px 0;
+}
+.footer__socials {
+  text-align: center;
+}
+.footer__social {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin: 0 5px 0 0;
+}
+.footer__copyrights {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
 }
