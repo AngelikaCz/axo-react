@@ -1,0 +1,45 @@
+.portfolio {
+  &__section {}
+
+  &__upper-heading {
+    text-align: center;
+  }
+
+  &__main-heading {
+    font-size: 48px;
+    text-align: center;
+    color: $portfolioHeadingsFontColor;
+  }
+
+  &__links {
+    @include reset-list;
+    display: flex;
+    margin: 0 80px 30px;
+    justify-content: space-evenly;
+    color: $portfolioHeadingsFontColor;
+  }
+
+  &__link-text {
+    color: $portfolioHeadingsFontColor;
+  }
+
+  &__images {
+    display: flex;
+  }
+
+  &__image-section {
+    width: calc(100/3);
+  }
+
+  &__image-section-1 {}
+
+  &__image {
+    width: 100%;
+    border-radius: 20px;
+
+    &:hover {}
+  }
+
+
+
+}
