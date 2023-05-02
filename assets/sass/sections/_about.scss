@@ -1,4 +1,5 @@
 .about {
+  margin: 40px 0;
 
   &__content {
     display: flex;
@@ -6,24 +7,36 @@
   }
 
   &__photo-box {
-    width: 40%;
-  }
+    width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
 
-  &__photo {
-    width: 80%;
-    border-radius: 20px;
-
-    &:after {
-      content: "";
+    &::after {
+      content: " ";
       background-color: $aboutPhotoBoxColor;
-      display: block;
-      width: 100px;
-      height: 100px;
+      width: 270px;
+      height: 270px;
+      position: absolute;
+      border-radius: 20px;
+      top: 200px;
+      right: 290px;
+      display: inline-block;
+      z-index: 1;
+
     }
   }
 
+  &__photo {
+    max-width: 435px;
+    // width: 70%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
   &__text-box {
-    width: 60%;
+    width: 55%;
   }
 
   &__upper-heading {}
@@ -31,6 +44,7 @@
   &__main-heading {
     font-size: 48px;
     color: $aboutHeadingsFontColor;
+    margin: 0;
   }
 
   &__text {
@@ -56,9 +70,17 @@
     color: $aboutReadButtonFontColor;
   }
 
-  &__play-button {}
+  &__play-button {
+    background-color: $aboutPlayButtonBgColor;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
-  &__play-button-icon {}
+  &__play-button-icon {
+    color: $aboutPlayButtonArrowColor;
+    font-size: 22px;
+  }
 
   &__play-button-caption {}
 }
