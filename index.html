@@ -352,9 +352,6 @@
           <div class="slider__item">
             <img src="./assets/img/logo5.png" alt="logo" class="slider__logo" />
           </div>
-          <div class="slider__item">
-            <img src="./assets/img/logo6.png" alt="logo" class="slider__logo" />
-          </div>
         </div>
       </div>
     </section>
@@ -369,11 +366,13 @@
           </h2>
           <div class="blog__posts">
             <div class="blog__box">
-              <img
-                src="./assets/img/blog1.png"
-                alt="person on laptop"
-                class="blog__image"
-              />
+              <div class="blog__box-image">
+                <img
+                  src="./assets/img/blog1.png"
+                  alt="person on laptop"
+                  class="blog__image"
+                />
+              </div>
               <div class="blog__text-box">
                 <h6 class="blog__post-upper-heading">
                   UI/UX/Design
@@ -389,11 +388,13 @@
               </div>
             </div>
             <div class="blog__box">
-              <img
-                src="./assets/img/blog2.png"
-                alt="writing place"
-                class="blog__image"
-              />
+              <div class="blog__box-image">
+                <img
+                  src="./assets/img/blog2.png"
+                  alt="writing place"
+                  class="blog__image"
+                />
+              </div>
               <div class="blog__text-box">
                 <h6 class="blog__post-upper-heading">
                   Web Design
@@ -409,11 +410,13 @@
               </div>
             </div>
             <div class="blog__box">
-              <img
-                src="./assets/img/blog3.png"
-                alt="desk with laptop"
-                class="blog__image"
-              />
+              <div class="blog__box-image">
+                <img
+                  src="./assets/img/blog3.png"
+                  alt="desk with laptop"
+                  class="blog__image"
+                />
+              </div>
               <div class="blog__text-box">
                 <h6 class="blog__post-upper-heading">
                   Web Development
@@ -470,13 +473,13 @@
                 placeholder="Email"
               />
               <!-- !!!!!!!!!!!!!!!!!!!!1 Zmienić typ boxa na rozciąganie -->
-              <input
+              <textarea
                 type="text"
                 name="search"
                 id="form-message"
                 class="contact__input"
                 placeholder="Message"
-              />
+              ></textarea>
               <button type="submit" class="contact__button">
                 Send me message
               </button>
@@ -511,6 +514,7 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="/assets/js/app.js"></script>
   </body>
 </html>

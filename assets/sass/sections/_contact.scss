@@ -1,5 +1,5 @@
 .contact {
-  margin: 0 0 120px 0;
+  margin: 160px 0 120px 0;
 
   &__sections {
     display: flex;
@@ -13,6 +13,7 @@
     font-size: 48px;
     color: $contactHeadingsFontColor;
     text-align: left;
+    margin: 0 40px 40px 0;
   }
 
   &__section {
@@ -26,12 +27,15 @@
   &__details-title {
     font-size: 22px;
     color: $contactDetailsTitlesFontColor;
+    font-weight: 500;
   }
 
   &__details-text {
     font-size: 18px;
     color: $contactDetailsTextFontColor;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+    width: 40%;
   }
 
   &__section-form {
@@ -49,7 +53,7 @@
 
   &__input {
     font-size: 18px;
-    margin: 0 0 40px 0;
+    margin: 0 0 60px 0;
     background-color: $contactFormBgColor;
     border: none;
     border-bottom: 1px solid $contactFormInputBorderColor;
@@ -57,10 +61,17 @@
     color: $contactFormInputFontColor;
     width: 80%;
     font-weight: 300;
+    line-height: 3;
 
     &::placeholder {
       color: $contactFormInputFontColor;
     }
+
+    &:last-of-type {
+      margin-bottom: 40px;
+      background-color: none;
+    }
+
   }
 
   &__button {
@@ -70,7 +81,7 @@
     padding: 20px 30px;
     border-radius: 50px;
     border: none;
+    margin: 0 0 40px 0;
   }
-
 
 }

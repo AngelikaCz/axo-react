@@ -10,29 +10,46 @@
     font-size: 48px;
     text-align: center;
     color: $blogHeadingsFontColor;
+    max-width: 600px;
+    margin: 0 auto 40px;
   }
 
   &__posts {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
   }
 
   &__box {
     width: calc(100/3);
     border-radius: 20px;
-    box-shadow: 10px 10px 10px $blogBoxShadowColor;
+    box-shadow: 20px 20px 50px $blogBoxShadowColor;
+  }
+
+  &__box-image {
+    width: 100%;
+    overflow: hidden;
   }
 
   &__image {
-    border-radius: 20px;
+    width: 100%;
+
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 2s;
+    }
   }
 
-  &__text-box {}
+  &__text-box {
+    padding: 30px;
+  }
 
   &__post-upper-heading {
     color: $blogPostsUpperHeadingsFontColor;
     font-size: 18px;
+    font-weight: 400;
+    margin: 0;
   }
 
   &__post-upper-date {
@@ -43,10 +60,14 @@
   &__post-main-heading {
     color: $blogHeadingsFontColor;
     font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.5;
   }
 
   &__description {
     color: $blogPostsTextFontColor;
     font-size: 18px;
+    line-height: 1.5;
   }
 }
