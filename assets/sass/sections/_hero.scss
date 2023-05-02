@@ -10,6 +10,11 @@
     width: 60%;
   }
 
+  &__about-box {
+    width: 90%;
+    margin: 150px 0 0 0;
+  }
+
   &__main-heading {
     font-size: 72px;
     color: $heroHeadingFontColor;
@@ -60,12 +65,17 @@
   &__photo-container {
     width: 40%;
     border-left: 35px solid #212025;
+  }
+
+  &__bg-accent-section {
+    width: 85%;
     background-color: $heroBgColorPhoto;
   }
 
   &__photo {
     filter: grayscale(100%);
-    max-width: 500px
+    max-width: 500px;
+    display: block;
   }
 
 }

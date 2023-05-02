@@ -10,26 +10,32 @@
   }
 
   &__photo {
-    width: 100%;
-    border-radius: 10px;
+    width: 80%;
+    border-radius: 20px;
+
+    &:after {
+      content: "";
+      background-color: $aboutPhotoBoxColor;
+      display: block;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__text-box {
     width: 60%;
   }
 
-  &__upper-heading {
-    text-align: left;
-  }
+  &__upper-heading {}
 
   &__main-heading {
     font-size: 48px;
     color: $aboutHeadingsFontColor;
-    text-align: left;
   }
 
   &__text {
     color: $aboutParagraphsFontColor;
+    line-height: 1.5;
   }
 
   &__buttons {

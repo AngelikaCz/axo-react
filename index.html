@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Rubik:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -35,7 +35,9 @@
           <div class="navbar__links">
             <ul class="navbar__links-list">
               <li class="navbar__link-box">
-                <a href="#" class="navbar__link">Services.</a>
+                <a href="#" class="navbar__link navbar__first-link"
+                  >Services.</a
+                >
               </li>
               <li class="navbar__link-box">
                 <a href="#" class="navbar__link">Work</a>
@@ -71,43 +73,49 @@
       <div class="container">
         <div class="hero__parts">
           <div class="hero__about">
-            <h1 class="hero__main-heading">Brandon User Interface Designer</h1>
-            <p class="hero__subtitle">
-              I'm a Freelance UI/UX Designer and Product Desiger based in
-              London, England. I strives to build immersive and beautiful web
-              applications through carefully crafted code and user-centric
-              design.
-            </p>
-            <button class="hero__button">
-              <a href="#" class="hero__button-text">Connect with me</a>
-            </button>
-            <ul class="hero__data">
-              <li>
-                <div class="hero__number-section">
-                  <h2 class="hero__number">7+</h2>
-                  <p class="hero__number-caption">Years Experience</p>
-                </div>
-              </li>
-              <li>
-                <div class="hero__number-section">
-                  <h2 class="hero__number">300+</h2>
-                  <p class="hero__number-caption">Complete Projects</p>
-                </div>
-              </li>
-              <li>
-                <div class="hero__number-section">
-                  <h2 class="hero__number">135+</h2>
-                  <p class="hero__number-caption">Happy Clients</p>
-                </div>
-              </li>
-            </ul>
+            <div class="hero__about-box">
+              <h1 class="hero__main-heading">
+                Brandon User Interface Designer
+              </h1>
+              <p class="hero__subtitle">
+                I'm a Freelance UI/UX Designer and Product Desiger based in
+                London, England. I strives to build immersive and beautiful web
+                applications through carefully crafted code and user-centric
+                design.
+              </p>
+              <button class="hero__button">
+                <a href="#" class="hero__button-text">Connect with me</a>
+              </button>
+              <ul class="hero__data">
+                <li>
+                  <div class="hero__number-section">
+                    <h2 class="hero__number">7+</h2>
+                    <p class="hero__number-caption">Years Experience</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="hero__number-section">
+                    <h2 class="hero__number">300+</h2>
+                    <p class="hero__number-caption">Complete Projects</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="hero__number-section">
+                    <h2 class="hero__number">135+</h2>
+                    <p class="hero__number-caption">Happy Clients</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="hero__photo-container">
-            <img
-              src="./assets/img/hero.png"
-              alt="person photo"
-              class="hero__photo"
-            />
+            <div class="hero__bg-accent-section">
+              <img
+                src="./assets/img/hero.png"
+                alt="person photo"
+                class="hero__photo"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -165,8 +173,8 @@
             />
           </div>
           <div class="about__text-box">
-            <h4 class="services__upper-heading">About me</h4>
-            <h2 class="services__main-heading">Awarded Designer</h2>
+            <h4 class="about__upper-heading">About me</h4>
+            <h2 class="about__main-heading">Awarded Designer</h2>
             <p class="about__text">
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual form of a document or

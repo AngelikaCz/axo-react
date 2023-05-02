@@ -1,6 +1,11 @@
 .navbar {
-  background-color: $navbarBgColor;
+  background-color: none;
   font-size: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 
   &__sections {
     display: flex;
@@ -8,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     color: $navbarMainFontColor;
-    padding: 30px 0;
+    padding: 40px 0;
   }
 
   &__me {
@@ -32,10 +37,13 @@
   }
 
 
-
   &__link {
     color: $navbarMainFontColor;
     margin: 0 30px 0 0;
+  }
+
+  &__first-link {
+    color: $navbarAccentFontColor;
   }
 
   &__socials {

@@ -1,4 +1,6 @@
 .services {
+  height: 100vh;
+
   &__upper-heading {
     text-align: center;
   }
@@ -7,18 +9,23 @@
     font-size: 48px;
     text-align: center;
     color: $servicesHeadingsFontColor;
+    font-weight: 700;
+    width: 40%;
+    margin: 0 auto;
   }
 
   &__list {
     @include reset-list;
     display: flex;
     gap: 15px;
+    margin: 40px 0 0 0;
   }
 
   &__box-content {
     width: calc(100/3);
     box-shadow: 10px 10px 10px $servicesBoxShadowColor;
     border-radius: 10px;
+    padding: 20px;
 
     &:hover {
       background-color: $servicesBoxBgHoverColor;
@@ -27,17 +34,18 @@
   }
 
   &__icon {
-    width: 40px;
+    font-size: 60px;
   }
 
   &__box-heading {
     font-size: 25px;
     color: $servicesHeadingsFontColor;
-    font-weight: 300;
+    font-weight: 500;
   }
 
   &__box-text {
     font-size: 20px;
+    line-height: 1.5;
     color: $servicesParagraphsFontColor;
   }
 

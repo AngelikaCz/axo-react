@@ -275,7 +275,6 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  padding: 10px 0 0 0;
 }
 
 h1,
@@ -313,6 +312,10 @@ a {
 }
 .hero__about {
   width: 60%;
+}
+.hero__about-box {
+  width: 90%;
+  margin: 150px 0 0 0;
 }
 .hero__main-heading {
   font-size: 72px;
@@ -360,14 +363,21 @@ a {
 .hero__photo-container {
   width: 40%;
   border-left: 35px solid #212025;
+}
+.hero__bg-accent-section {
+  width: 85%;
   background-color: #676CDB;
 }
 .hero__photo {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   max-width: 500px;
+  display: block;
 }
 
+.services {
+  height: 100vh;
+}
 .services__upper-heading {
   text-align: center;
 }
@@ -375,6 +385,9 @@ a {
   font-size: 48px;
   text-align: center;
   color: #212025;
+  font-weight: 700;
+  width: 40%;
+  margin: 0 auto;
 }
 .services__list {
   margin: 0;
@@ -384,27 +397,30 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+  margin: 40px 0 0 0;
 }
 .services__box-content {
   width: 33.3333333333;
   -webkit-box-shadow: 10px 10px 10px rgba(103, 109, 219, 0.5254901961);
           box-shadow: 10px 10px 10px rgba(103, 109, 219, 0.5254901961);
   border-radius: 10px;
+  padding: 20px;
 }
 .services__box-content:hover {
   background-color: #676CDB;
   color: #FFFFFF;
 }
 .services__icon {
-  width: 40px;
+  font-size: 60px;
 }
 .services__box-heading {
   font-size: 25px;
   color: #212025;
-  font-weight: 300;
+  font-weight: 500;
 }
 .services__box-text {
   font-size: 20px;
+  line-height: 1.5;
   color: #9F9F9F;
 }
 
@@ -421,22 +437,26 @@ a {
   width: 40%;
 }
 .about__photo {
-  width: 100%;
-  border-radius: 10px;
+  width: 80%;
+  border-radius: 20px;
+}
+.about__photo:after {
+  content: "";
+  background-color: #676CDB;
+  display: block;
+  width: 100px;
+  height: 100px;
 }
 .about__text-box {
   width: 60%;
 }
-.about__upper-heading {
-  text-align: left;
-}
 .about__main-heading {
   font-size: 48px;
   color: #212025;
-  text-align: left;
 }
 .about__text {
   color: #9F9F9F;
+  line-height: 1.5;
 }
 .about__buttons {
   display: -webkit-box;
@@ -678,8 +698,13 @@ a {
 }
 
 .navbar {
-  background-color: #212025;
+  background-color: none;
   font-size: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 }
 .navbar__sections {
   display: -webkit-box;
@@ -696,7 +721,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: #FFFFFF;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 .navbar__me {
   width: 33.3333333333;
@@ -723,6 +748,9 @@ a {
 .navbar__link {
   color: #FFFFFF;
   margin: 0 30px 0 0;
+}
+.navbar__first-link {
+  color: #676CDB;
 }
 .navbar__socials {
   width: 33.3333333333;
