@@ -11,13 +11,14 @@
   &__main-heading {
     font-size: 48px;
     text-align: center;
-    color: $portfolioHeadingsFontColor;
+    max-width: 600px;
+    margin: 0 auto 40px;
   }
 
   &__links {
+    margin: 40px auto 40px;
     @include reset-list;
     display: flex;
-    margin: 0 80px 30px;
     justify-content: space-evenly;
     color: $portfolioHeadingsFontColor;
   }
@@ -28,6 +29,9 @@
 
   &__images {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0 0 0;
   }
 
   &__image-section {
