@@ -45,6 +45,10 @@
     border-radius: 20px;
 
     &:hover {}
+
+    &--notdisplayed {
+      display: none;
+    }
   }
 
 

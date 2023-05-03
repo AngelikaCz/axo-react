@@ -4,12 +4,27 @@ html {
 
 body {
   font-family: $mainFontFamily;
+  line-height: 1.5;
 }
+
+// CURSOR
+
+.cursor {
+  width: 25px;
+  height: 25px;
+  background-color: #676CDB;
+  opacity: 0.6;
+  border-radius: 50%;
+  position: absolute;
+}
+
 
 h1,
 h2,
 h3 {
   font-family: $mainHeadingsFontFamily;
+  line-height: 1.2;
+  margin: 0;
 }
 
 h4 {
@@ -28,5 +43,5 @@ a {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 30px;
 }

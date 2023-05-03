@@ -1,6 +1,6 @@
 .hero {
   background-color: $heroBgColorMain;
-  height: 100vh;
+  height: 100%;
 
   &__parts {
     display: flex;
@@ -24,7 +24,6 @@
   &__subtitle {
     font-size: 18px;
     color: $heroSubtitlesFontColor;
-    line-height: 1.5;
     margin: 24px 0 40px 0;
 
   }
@@ -47,6 +46,7 @@
     display: flex;
     justify-content: space-between;
     margin: 80px 0 0 0;
+    padding: 0 0 56px 0;
 
   }
 
@@ -65,17 +65,30 @@
   &__photo-container {
     width: 40%;
     border-left: 35px solid #212025;
-  }
+    position: relative;
 
-  &__bg-accent-section {
-    width: 85%;
-    background-color: $heroBgColorPhoto;
+
+    &::after {
+      content: " ";
+      background-color: $aboutPhotoBoxColor;
+      position: absolute;
+      height: 100%;
+      width: 70%;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      z-index: 2;
+    }
   }
 
   &__photo {
     filter: grayscale(100%);
     max-width: 500px;
     display: block;
+    z-index: 3;
+    position: relative;
+    left: 65px;
+    top: 22px;
   }
 
 }
