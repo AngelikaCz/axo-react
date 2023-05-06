@@ -1,13 +1,12 @@
 .blog {
 
-  &__section {}
 
   &__upper-heading {
     text-align: center;
   }
 
   &__main-heading {
-    font-size: 48px;
+    @include fluid-type(767px, 1200px, 26px, 48px);
     text-align: center;
     color: $blogHeadingsFontColor;
     max-width: 600px;

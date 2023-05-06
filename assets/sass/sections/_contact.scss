@@ -14,7 +14,7 @@
   }
 
   &__main-heading {
-    font-size: 48px;
+    @include fluid-type(767px, 1200px, 26px, 48px);
     color: $contactHeadingsFontColor;
     text-align: left;
     margin: 0 40px 40px 0;

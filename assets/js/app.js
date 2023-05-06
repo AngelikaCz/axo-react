@@ -11,7 +11,7 @@
 
 let navigation = document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 10) {
+  if (window.pageYOffset > 100) {
     navigation.classList.add("navbar--bg");
   } else {
     navigation.classList.remove("navbar--bg");
@@ -77,9 +77,10 @@ tns({
   items: 2,
   slideBy: "page",
   autoplay: true,
-  controls: false,
+  controls: true,
+  controlsText: ["<", ">"],
   autoplayButtonOutput: false,
-  navPosition: "top",
+  nav: false,
   mouseDrag: true,
 });
 
@@ -87,11 +88,11 @@ tns({
 
 tns({
   container: ".slider__element",
-  items: 5,
-  slideBy: "page",
+  items: 4,
+  slideBy: 1,
   autoplay: true,
   controls: false,
   autoplayButtonOutput: false,
-  navPosition: "bottom",
+  nav: false,
   mouseDrag: true,
 });

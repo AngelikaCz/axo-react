@@ -23,8 +23,8 @@
       height: 270px;
       position: absolute;
       border-radius: 20px;
-      top: 200px;
-      right: 365px;
+      top: 50%;
+      right: 65%;
       display: inline-block;
       z-index: 1;
 
@@ -54,7 +54,7 @@
   }
 
   &__main-heading {
-    font-size: 48px;
+    @include fluid-type(767px, 1200px, 26px, 48px);
     color: $aboutHeadingsFontColor;
     margin: 0;
 

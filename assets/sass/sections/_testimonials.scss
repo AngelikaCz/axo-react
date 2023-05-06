@@ -1,15 +1,22 @@
 .testimonials {
 
+  & .tns-controls {
+    text-align: right;
+  }
+
   & button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
     background-color: $testimonialsButtonBgColor;
+    color: $testimonialsButtonFontColor;
+    font-size: 30px;
+
   }
 
   &__main-heading {
-    font-size: 48px;
+    @include fluid-type(767px, 1200px, 26px, 48px);
     color: $testimonialsHeadingsFontColor;
     max-width: 30%;
   }
