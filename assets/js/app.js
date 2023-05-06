@@ -1,12 +1,3 @@
-// CURSOR
-// const cursor = document.querySelector(".cursor");
-// document.addEventListener("mousemove", (e) => {
-//   cursor.setAttribute(
-//     "style",
-//     "top: " + (e.pageY - 12.5) + "px; left: " + (e.pageX - 12.5) + "px;"
-//   );
-// });
-
 //NAVBAR
 
 let navigation = document.querySelector(".navbar");
@@ -55,20 +46,6 @@ function updatedC() {
     clearInterval(countsC);
   }
 }
-
-// PORTFOLIO IMAGES
-
-// let youtube = document.getElementById("youtube-link");
-// let detail = document.getElementById("detail-link");
-// let vimeo = document.getElementById("vimeo-link");
-// let soundcloud = document.getElementById("soundcloud-link");
-// let images = document.getElementById("images-link");
-// let youtubeImage = document.getElementById("youtube");
-// let detailImage = document.getElementById("detail");
-// let vimeoImage = document.getElementById("vimeo");
-// let soundcloudImage = document.getElementById("soundcloud");
-// let imagesImage = document.getElementById("images");
-// let allImages = document.querySelectorAll(".portfolio__image");
 
 // SLIDER testimonials
 

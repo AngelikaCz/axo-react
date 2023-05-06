@@ -731,11 +731,19 @@ a {
 }
 .portfolio__image-box {
   margin: 10px 0 0 0;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .portfolio__image {
   width: 100%;
-  border-radius: 20px;
 }
+.portfolio__image:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
 .testimonials .tns-controls {
   text-align: right;
 }

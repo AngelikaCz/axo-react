@@ -55,14 +55,19 @@
 
   &__image-box {
     margin: 10px 0 0 0;
+    overflow: hidden;
+    border-radius: 20px;
   }
 
 
   &__image {
     width: 100%;
-    border-radius: 20px;
 
-    &:hover {}
+    &:hover {
+      transform: scale(1.2);
+      transition: 2s;
+
+    }
   }
 
 
