@@ -8,6 +8,24 @@
 
   &__about {
     width: 60%;
+
+
+    @include forTablet {
+      width: 100%;
+      position: relative;
+
+      // &::after {
+      //   content: " ";
+      //   background-color: $heroBgColorPhoto;
+      //   position: absolute;
+      //   height: 100%;
+      //   width: 60px;
+      //   top: 0;
+      //   right: 0;
+      //   display: inline-block;
+      //   z-index: 10;
+      // }
+    }
   }
 
   &__about-box {
@@ -19,6 +37,7 @@
     font-size: 72px;
     color: $heroHeadingFontColor;
     font-weight: 600;
+    padding: 10px 0 0 0;
   }
 
   &__subtitle {
@@ -66,11 +85,18 @@
     width: 40%;
     border-left: 35px solid #212025;
     position: relative;
+    display: flex;
+    align-items: flex-end;
+
+
+    @include forTablet {
+      width: 0;
+    }
 
 
     &::after {
       content: " ";
-      background-color: $aboutPhotoBoxColor;
+      background-color: $heroBgColorPhoto;
       position: absolute;
       height: 100%;
       width: 70%;
@@ -78,6 +104,12 @@
       right: 0;
       display: inline-block;
       z-index: 2;
+
+      @include forTablet {
+        width: 100%;
+      }
+
+
     }
   }
 
@@ -88,7 +120,10 @@
     z-index: 3;
     position: relative;
     left: 65px;
-    top: 22px;
+
+    @include forTablet {
+      display: none;
+    }
   }
 
 }

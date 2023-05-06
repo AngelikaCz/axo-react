@@ -1,51 +1,89 @@
 // CURSOR
-const cursor = document.querySelector(".cursor");
-document.addEventListener("mousemove", (e) => {
-  cursor.setAttribute(
-    "style",
-    "top: " + (e.pageY - 12.5) + "px; left: " + (e.pageX - 12.5) + "px;"
-  );
+// const cursor = document.querySelector(".cursor");
+// document.addEventListener("mousemove", (e) => {
+//   cursor.setAttribute(
+//     "style",
+//     "top: " + (e.pageY - 12.5) + "px; left: " + (e.pageX - 12.5) + "px;"
+//   );
+// });
+
+//NAVBAR
+
+let navigation = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 10) {
+    navigation.classList.add("navbar--bg");
+  } else {
+    navigation.classList.remove("navbar--bg");
+  }
 });
 
-// SERVICES TILT EFFECT
-let servicesBox = document.querySelectorAll(".services__box-content");
-let threshold = 15;
+let hamburger = document.querySelector(".navbar__hamburger");
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("navbar__hamburger--active");
+  navigation.classList.toggle("navbar--open");
+});
 
-function handleTiltHover(e) {
-  const { clientX, clientY, currentTarget } = e;
-  const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
+//COUNTERS
 
-  const horizontal = (clientX - offsetLeft) / clientWidth;
-  const vertical = (clientY - offsetTop) / clientHeight;
-
-  const rotateX = (threshold / 2 - horizontal * threshold).toFixed(2);
-  const rotateY = (vertical * threshold - threshold / 2).toFixed(2);
-
-  servicesBox.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+let counts = setInterval(updated, 100);
+let upto = 0;
+function updated() {
+  let count = document.getElementById("counterYears");
+  count.innerHTML = ++upto;
+  if (upto === 7) {
+    clearInterval(counts);
+  }
 }
 
-function resetTiltStyles(e) {
-  servicesBox.style.transform = `perspective(${e.CurrentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+let countsP = setInterval(updatedP);
+let uptoP = 0;
+function updatedP() {
+  let countP = document.getElementById("counterProjects");
+  countP.innerHTML = ++uptoP;
+  if (uptoP === 300) {
+    clearInterval(countsP);
+  }
 }
 
-servicesBox.addEventListener("mousemove", handleTiltHover);
-servicesBox.addEventListener("mouseleave", resetTiltStyles);
+let countsC = setInterval(updatedC);
+let uptoC = 0;
+function updatedC() {
+  let countC = document.getElementById("counterClients");
+  countC.innerHTML = ++uptoC;
+  if (uptoC === 135) {
+    clearInterval(countsC);
+  }
+}
 
 // PORTFOLIO IMAGES
 
-let youtube = document.getElementById("youtube-link");
-let youtubeImage = document.getElementById("youtube");
-let detailImage = document.getElementById("detail");
-let vimeoImage = document.getElementById("vimeo");
-let soundcloudImage = document.getElementById("soundcloud");
-let imagesImage = document.getElementById("images");
-let allImages = document.querySelectorAll(".portfolio__image");
+// let youtube = document.getElementById("youtube-link");
+// let detail = document.getElementById("detail-link");
+// let vimeo = document.getElementById("vimeo-link");
+// let soundcloud = document.getElementById("soundcloud-link");
+// let images = document.getElementById("images-link");
+// let youtubeImage = document.getElementById("youtube");
+// let detailImage = document.getElementById("detail");
+// let vimeoImage = document.getElementById("vimeo");
+// let soundcloudImage = document.getElementById("soundcloud");
+// let imagesImage = document.getElementById("images");
+// let allImages = document.querySelectorAll(".portfolio__image");
 
-youtube.addEventListener("click", () => {
-  allImages.classList.add("portfolio__image--notdisplayed");
+// SLIDER testimonials
+
+tns({
+  container: ".testimonials__section",
+  items: 2,
+  slideBy: "page",
+  autoplay: true,
+  controls: false,
+  autoplayButtonOutput: false,
+  navPosition: "top",
+  mouseDrag: true,
 });
 
-// SLIDER
+// SLIDER logos
 
 tns({
   container: ".slider__element",

@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -65,6 +65,9 @@
               ><i class="fa-brands fa-pinterest"></i
             ></a>
           </div>
+          <button class="navbar__hamburger">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </nav>
@@ -90,19 +93,25 @@
               <ul class="hero__data">
                 <li>
                   <div class="hero__number-section">
-                    <h2 class="hero__number">7+</h2>
+                    <h2 class="hero__number">
+                      <span id="counterYears">7</span>+
+                    </h2>
                     <p class="hero__number-caption">Years Experience</p>
                   </div>
                 </li>
                 <li>
                   <div class="hero__number-section">
-                    <h2 class="hero__number">300+</h2>
+                    <h2 class="hero__number">
+                      <span id="counterProjects">300</span>+
+                    </h2>
                     <p class="hero__number-caption">Complete Projects</p>
                   </div>
                 </li>
                 <li>
                   <div class="hero__number-section">
-                    <h2 class="hero__number">135+</h2>
+                    <h2 class="hero__number">
+                      <span id="counterClients">135</span>+
+                    </h2>
                     <p class="hero__number-caption">Happy Clients</p>
                   </div>
                 </li>
@@ -110,13 +119,11 @@
             </div>
           </div>
           <div class="hero__photo-container">
-            <!-- <div class="hero__bg-accent-section"> -->
             <img
               src="./assets/img/hero.png"
               alt="person photo"
               class="hero__photo"
             />
-            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -128,7 +135,7 @@
         <h4 class="services__upper-heading">My services</h4>
         <h2 class="services__main-heading">What I do for my Customers</h2>
         <ul class="services__list">
-          <li class="services__box">
+          <li class="services__box" data-tilt>
             <div class="services__box-content">
               <i class="fa-regular fa-id-card services__icon"></i>
               <h5 class="services__box-heading">UI/UX Designer</h5>
@@ -138,7 +145,7 @@
               </p>
             </div>
           </li>
-          <li class="services__box">
+          <li class="services__box" data-tilt>
             <div class="services__box-content">
               <i class="fa-solid fa-laptop-code services__icon"></i>
               <h5 class="services__box-heading">Webflow Developer</h5>
@@ -148,7 +155,7 @@
               </p>
             </div>
           </li>
-          <li class="services__box">
+          <li class="services__box" data-tilt>
             <div class="services__box-content">
               <i class="fa-solid fa-pen-nib services__icon"></i>
               <h5 class="services__box-heading">Product Designer</h5>
@@ -211,31 +218,55 @@
           <h2 class="portfolio__main-heading">
             Showcasing some of my best work
           </h2>
-          <ul class="portfolio__links">
+          <ul class="portfolio__links" id="portfolio__links">
             <li class="portfolio__link">
-              <a href="#" class="portfolio__link-text">All</a>
+              <a href="#" class="portfolio__link-text" data-filter="all">All</a>
             </li>
             <li class="portfolio__link">
-              <a href="#" class="portfolio__link-text" id="youtube-link"
+              <a
+                href="#"
+                class="portfolio__link-text"
+                id="youtube-link"
+                data-filter="portfolio__youtube"
                 >Youtube</a
               >
             </li>
             <li class="portfolio__link">
-              <a href="#" class="portfolio__link-text">Vimeo</a>
+              <a href="#" class="portfolio__link-text" data-filter="vimeo"
+                >Vimeo</a
+              >
             </li>
             <li class="portfolio__link">
-              <a href="#" class="portfolio__link-text">Soundcloud</a>
+              <a
+                href="#"
+                class="portfolio__link-text"
+                id="soundcloud-link"
+                data-filter="soundcloud"
+                >Soundcloud</a
+              >
             </li>
             <li class="portfolio__link">
-              <a href="#" class="portfolio__link-text">Images</a>
+              <a
+                href="#"
+                class="portfolio__link-text"
+                id="images-link"
+                data-filter="images"
+                >Images</a
+              >
             </li>
             <li class="portfolio__link">
-              <a href="#" class="portfolio__link-text">Detail</a>
+              <a
+                href="#"
+                class="portfolio__link-text"
+                id="detail-link"
+                data-filter="detail"
+                >Detail</a
+              >
             </li>
           </ul>
           <div class="portfolio__images">
             <div class="portfolio__images-section">
-              <div class="portfolio__image-section-1">
+              <div class="portfolio__image-box">
                 <img
                   src="./assets/img/1.png"
                   alt="phone"
@@ -243,7 +274,7 @@
                   id="youtube"
                 />
               </div>
-              <div class="portfolio__image-section-2">
+              <div class="portfolio__image-box">
                 <img
                   src="./assets/img/4.png"
                   alt="cloud"
@@ -253,7 +284,7 @@
               </div>
             </div>
             <div class="portfolio__image-section">
-              <div class="portfolio__image-section-3">
+              <div class="portfolio__image-box">
                 <img
                   src="./assets/img/2.png"
                   alt="laptop"
@@ -261,7 +292,7 @@
                   id="vimeo"
                 />
               </div>
-              <div class="portfolio__image-section-4">
+              <div class="portfolio__image-box">
                 <img
                   src="./assets/img/5.png"
                   alt="camera"
@@ -271,7 +302,7 @@
               </div>
             </div>
             <div class="portfolio__image-section">
-              <div class="portfolio__image-section-5">
+              <div class="portfolio__image-box">
                 <img
                   src="./assets/img/3.png"
                   alt="light-house"
@@ -279,7 +310,7 @@
                   id="soundcloud"
                 />
               </div>
-              <div class="portfolio__image-section-6">
+              <div class="portfolio__image-box">
                 <img
                   src="./assets/img/6.png"
                   alt="house"
@@ -296,9 +327,8 @@
     <!-- TESTIMONIALS -->
     <section class="testimonials">
       <div class="container">
-        <h4 class="services__upper-heading">Testimonials</h4>
-        <h2 class="services__main-heading">What My Clients Say</h2>
-        <!-- PLACEHOLDER FOR SLIDER with Testimonials -->
+        <h4 class="testimonials__upper-heading">Testimonials</h4>
+        <h2 class="testimonials__main-heading">What My Clients Say</h2>
         <div class="testimonials__section">
           <div class="testimonials__box">
             <p class="testimonials__text">
@@ -339,6 +369,27 @@
               <div class="testimonials__signature">
                 <p class="testimonials__name">Beseie Cooper</p>
                 <p class="testimonials__company">XYZ Company</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__box">
+            <p class="testimonials__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+              ducimus id amet dignissimos ad odio atque nisi laboriosam.
+              Temporibus debitis reiciendis ipsum aliquam sunt suscipit sapiente
+              dolorem enim quisquam iusto!
+            </p>
+            <div class="testimonials__signature-section">
+              <div class="testimonials__image-box">
+                <img
+                  src="./assets/img/mike.jpg"
+                  alt="person photo"
+                  class="testimonials__image"
+                />
+              </div>
+              <div class="testimonials__signature">
+                <p class="testimonials__name">Mike Anderson</p>
+                <p class="testimonials__company">Vivaco Studio</p>
               </div>
             </div>
           </div>
@@ -485,7 +536,6 @@
                 class="contact__input"
                 placeholder="Email"
               />
-              <!-- !!!!!!!!!!!!!!!!!!!!1 Zmienić typ boxa na rozciąganie -->
               <textarea
                 type="text"
                 name="search"
@@ -527,6 +577,12 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+      integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="/assets/js/app.js"></script>
   </body>

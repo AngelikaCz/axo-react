@@ -1,32 +1,41 @@
 .testimonials {
-  &__upper-heading {
-    text-align: left;
+
+  & button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: $testimonialsButtonBgColor;
   }
 
   &__main-heading {
-    font-size: 48px;color: $testimonialsHeadingsFontColor;
-    text-align: left;
+    font-size: 48px;
+    color: $testimonialsHeadingsFontColor;
+    max-width: 30%;
   }
 
   &__section {
     display: flex;
     gap: 20px;
+
   }
 
   &__box {
     box-shadow: 10px 10px 10px $testimonialsBoxShadowColor;
     border-radius: 20px;
-    padding: 20px;
+    padding: 48px 36px 30px;
   }
 
   &__text {
     font-size: 18px;
     color: $testimonialsParagraphFontColor;
+    font-style: italic;
   }
 
   &__signature-section {
     display: flex;
     align-items: center;
+    margin: 40px 0 0 0;
   }
 
   &__image-box {
@@ -47,11 +56,13 @@
   &__name {
     font-size: 24px;
     margin: 0;
+    font-weight: 500;
   }
 
   &__company {
     font-size: 20px;
     color: $testimonialsCompanyFontColor;
     margin: 0;
+    font-style: italic;
   }
 }

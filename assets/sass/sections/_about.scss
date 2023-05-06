@@ -1,16 +1,20 @@
 .about {
-  margin: 40px 0;
 
   &__content {
     display: flex;
     flex-direction: row;
+
+    @include forTablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__photo-box {
     width: 45%;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
     &::after {
       content: " ";
@@ -20,16 +24,20 @@
       position: absolute;
       border-radius: 20px;
       top: 200px;
-      right: 290px;
+      right: 365px;
       display: inline-block;
       z-index: 1;
+
+      @include forTablet {
+        top: 45%;
+        right: 45%;
+      }
 
     }
   }
 
   &__photo {
     max-width: 435px;
-    // width: 70%;
     border-radius: 20px;
     position: relative;
     z-index: 2;
@@ -39,19 +47,24 @@
     width: 55%;
   }
 
-  &__upper-heading {}
+  &__upper-heading {
+    @include forTablet {
+      margin: 60px 0 0 0;
+    }
+  }
 
   &__main-heading {
     font-size: 48px;
     color: $aboutHeadingsFontColor;
     margin: 0;
+
   }
 
 
   &__text-first-paragraph,
   &__text-second-paragraph {
     color: $aboutParagraphsFontColor;
-    line-height: 1.5;
+    font-size: 18px;
   }
 
   &__text-second-paragraph {
@@ -59,7 +72,7 @@
   }
 
   &__buttons {
-    margin: 20px 0 0 0;
+    margin: 50px 0 0 0;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -68,7 +81,7 @@
   &__read-button {
     font-size: 18px;
     background-color: $aboutBgColorReadButton;
-    padding: 20px 30px;
+    padding: 20px 40px;
     border-radius: 50px;
     border: none;
   }
@@ -82,12 +95,18 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin: 0 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__play-button-icon {
     color: $aboutPlayButtonArrowColor;
-    font-size: 22px;
+    font-size: 25px;
   }
 
-  &__play-button-caption {}
+  &__play-button-caption {
+    font-size: 18px;
+  }
 }
